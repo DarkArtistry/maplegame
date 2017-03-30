@@ -18,7 +18,7 @@ $(document).ready(function () {
   var bubble = document.querySelector('#bubble')
 
   var chatBox = document.querySelector('input')
-
+  var $chatBoxs = $(document).find('input')
   // console.log(container.width)
 
   // window.addEventListener('resize', resizeCanvas, false)
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
   function Hero () {
     this.x = (canvas.width / 2)
-    this.y = canvas.height * 0.82
+    this.y = canvas.height * 0.81
     this.image = heroImages2[0]
   }
 
@@ -103,6 +103,7 @@ $(document).ready(function () {
       hero.image = heroimage8
     }
     if ('Enter' in keysDown) {
+      $chatBoxs.toggleClass('displayNone')
       chatstring += chatBox.value
       chatBox.value = ''
     }

@@ -1,5 +1,5 @@
 html {
-background: url("bluebamboo.jpg") no-repeat center center fixed;
+background: url("maplestorybg.png") no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -24,13 +24,13 @@ background-size: cover;
   margin: 0 auto;*/
   /*background-color: grey;*/
   position: relative;
-  background: url("maplestorybg.png")no-repeat center center;
+  /*background: url("maplestorybg.png")no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  border-radius: 20px;
-  border: 10px solid black;
+  background-size: cover;*/
+  /*border-radius: 20px;
+  border: 10px solid black;*/
   z-index: -1;
 }
 
@@ -63,11 +63,16 @@ background-size: cover;
 }
 
 input {
+  display: none;
 position: relative;
 z-index: +1;
 top: -55px;
-border-radius: 20px;
+/*border-radius: 20px;*/
 width: 100%;
-height: 20px;
+/*height: 20px;*/
 font-size: 18px;
+}
+
+.displayNone {
+  display:block;
 }
